@@ -7,15 +7,18 @@
 
 ## Purpose
 
-This policy establishes a framework for classifying organizational data based on sensitivity, value, and regulatory requirements to ensure appropriate protection measures are applied.
+This policy establishes a framework for classifying organizational data based on sensitivity, value, and
+regulatory requirements to ensure appropriate protection measures are applied.
 
 ## Scope
 
-This policy applies to all data created, received, stored, processed, or transmitted by the organization, regardless of format (electronic, paper, or other media).
+This policy applies to all data created, received, stored, processed, or transmitted by the organization,
+regardless of format (electronic, paper, or other media).
 
 ## Policy Statement
 
-All organizational data must be classified according to its sensitivity and business value. Classification determines the security controls, handling procedures, and access requirements for data protection.
+All organizational data must be classified according to its sensitivity and business value. Classification
+determines the security controls, handling procedures, and access requirements for data protection.
 
 ## Data Classification Levels
 

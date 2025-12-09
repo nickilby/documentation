@@ -7,15 +7,20 @@
 
 ## Purpose
 
-This policy establishes requirements for creating, managing, and protecting passwords to ensure the security of user accounts and organizational systems.
+This policy establishes requirements for creating, managing, and protecting passwords to ensure the
+security of user accounts and organizational systems.
 
 ## Scope
 
-This policy applies to all user accounts, service accounts, and systems that use password-based authentication. This includes employees, contractors, vendors, and any third-party users with system access.
+This policy applies to all user accounts, service accounts, and systems that use password-based
+authentication. This includes employees, contractors, vendors, and any third-party users with system
+access.
 
 ## Policy Statement
 
-All passwords must meet complexity requirements, be protected from unauthorized disclosure, and be changed regularly. Password sharing is prohibited. Multi-factor authentication (MFA) is required for privileged accounts and sensitive systems.
+All passwords must meet complexity requirements, be protected from unauthorized disclosure, and be changed
+regularly. Password sharing is prohibited. Multi-factor authentication (MFA) is required for privileged
+accounts and sensitive systems.
 
 ## Password Requirements
 

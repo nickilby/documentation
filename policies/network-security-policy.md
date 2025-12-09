@@ -7,7 +7,9 @@
 
 ## Purpose
 
-This policy establishes security requirements for network infrastructure, network devices, and network communications to protect organizational data and systems from unauthorized access, attacks, and data breaches.
+This policy establishes security requirements for network infrastructure, network devices, and network
+communications to protect organizational data and systems from unauthorized access, attacks, and data
+breaches.
 
 ## Scope
 
@@ -22,7 +24,9 @@ This policy applies to all network infrastructure including:
 
 ## Policy Statement
 
-All network infrastructure must be designed, configured, and maintained with security as a primary consideration. Network segmentation, monitoring, and access controls must be implemented to protect organizational assets.
+All network infrastructure must be designed, configured, and maintained with security as a primary
+consideration. Network segmentation, monitoring, and access controls must be implemented to protect
+organizational assets.
 
 ## Network Architecture Principles
 

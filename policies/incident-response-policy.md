@@ -7,15 +7,18 @@
 
 ## Purpose
 
-This policy establishes procedures for detecting, responding to, and recovering from security incidents and IT service disruptions to minimize impact and restore normal operations.
+This policy establishes procedures for detecting, responding to, and recovering from security incidents
+and IT service disruptions to minimize impact and restore normal operations.
 
 ## Scope
 
-This policy applies to all IT systems, networks, applications, and data. All IT staff and relevant stakeholders must follow these procedures when responding to incidents.
+This policy applies to all IT systems, networks, applications, and data. All IT staff and relevant
+stakeholders must follow these procedures when responding to incidents.
 
 ## Policy Statement
 
-All security incidents and significant IT service disruptions must be reported, investigated, and resolved in a timely and systematic manner following established procedures.
+All security incidents and significant IT service disruptions must be reported, investigated, and resolved
+in a timely and systematic manner following established procedures.
 
 ## Incident Classification
 

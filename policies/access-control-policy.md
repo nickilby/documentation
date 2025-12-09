@@ -7,15 +7,18 @@
 
 ## Purpose
 
-This policy establishes requirements for managing user access to IT systems, applications, and data to ensure appropriate access controls, protect sensitive information, and maintain accountability.
+This policy establishes requirements for managing user access to IT systems, applications, and data to
+ensure appropriate access controls, protect sensitive information, and maintain accountability.
 
 ## Scope
 
-This policy applies to all IT systems, applications, networks, and data repositories. It covers all users including employees, contractors, vendors, and third-party service providers.
+This policy applies to all IT systems, applications, networks, and data repositories. It covers all users
+including employees, contractors, vendors, and third-party service providers.
 
 ## Policy Statement
 
-Access to IT resources must be granted based on business need, job function, and principle of least privilege. All access must be authorized, documented, monitored, and revoked when no longer needed.
+Access to IT resources must be granted based on business need, job function, and principle of least
+privilege. All access must be authorized, documented, monitored, and revoked when no longer needed.
 
 ## Access Control Principles
 

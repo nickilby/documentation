@@ -7,7 +7,8 @@
 
 ## Purpose
 
-This policy establishes security requirements for remote access to organizational IT systems and networks to ensure secure connectivity while maintaining appropriate security controls.
+This policy establishes security requirements for remote access to organizational IT systems and networks
+to ensure secure connectivity while maintaining appropriate security controls.
 
 ## Scope
 
@@ -22,7 +23,9 @@ This policy applies to all remote access methods including:
 
 ## Policy Statement
 
-Remote access to organizational systems must be authorized, secured with strong authentication, encrypted, and monitored. All remote access must comply with security requirements and be used only for authorized business purposes.
+Remote access to organizational systems must be authorized, secured with strong authentication, encrypted,
+and monitored. All remote access must comply with security requirements and be used only for authorized
+business purposes.
 
 ## Remote Access Authorization
 

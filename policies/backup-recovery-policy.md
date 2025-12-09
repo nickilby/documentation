@@ -7,15 +7,19 @@
 
 ## Purpose
 
-This policy establishes requirements for data backup and recovery procedures to ensure business continuity, data protection, and timely restoration of IT systems and data.
+This policy establishes requirements for data backup and recovery procedures to ensure business continuity,
+data protection, and timely restoration of IT systems and data.
 
 ## Scope
 
-This policy applies to all organizational data, systems, applications, and IT infrastructure that require backup and recovery capabilities.
+This policy applies to all organizational data, systems, applications, and IT infrastructure that require
+backup and recovery capabilities.
 
 ## Policy Statement
 
-All critical data and systems must be backed up regularly according to defined schedules. Backup systems must be tested regularly to ensure recoverability. Recovery procedures must be documented and personnel trained.
+All critical data and systems must be backed up regularly according to defined schedules. Backup systems
+must be tested regularly to ensure recoverability. Recovery procedures must be documented and personnel
+trained.
 
 ## Backup Requirements
 

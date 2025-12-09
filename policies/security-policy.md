@@ -7,15 +7,19 @@
 
 ## Purpose
 
-This policy establishes the framework for information security management to protect organizational assets, data, and systems from threats and vulnerabilities.
+This policy establishes the framework for information security management to protect organizational assets,
+data, and systems from threats and vulnerabilities.
 
 ## Scope
 
-This policy applies to all IT systems, networks, data, personnel, and third-party services that access or process organizational information.
+This policy applies to all IT systems, networks, data, personnel, and third-party services that access or
+process organizational information.
 
 ## Policy Statement
 
-All IT resources must be protected against unauthorized access, use, disclosure, modification, or destruction. Security measures must be implemented in accordance with risk assessments and industry best practices.
+All IT resources must be protected against unauthorized access, use, disclosure, modification, or
+destruction. Security measures must be implemented in accordance with risk assessments and industry best
+practices.
 
 ## Security Principles
 

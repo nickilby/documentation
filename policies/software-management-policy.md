@@ -7,7 +7,8 @@
 
 ## Purpose
 
-This policy establishes requirements for managing software installation, updates, licensing, and lifecycle to ensure security, compliance, and efficient IT operations.
+This policy establishes requirements for managing software installation, updates, licensing, and lifecycle
+to ensure security, compliance, and efficient IT operations.
 
 ## Scope
 
@@ -21,7 +22,8 @@ This policy applies to all software installed on organizational IT systems inclu
 
 ## Policy Statement
 
-All software must be approved, licensed, and managed according to established procedures. Unauthorized software installation is prohibited. Software must be kept current with security updates and patches.
+All software must be approved, licensed, and managed according to established procedures. Unauthorized
+software installation is prohibited. Software must be kept current with security updates and patches.
 
 ## Software Categories
 

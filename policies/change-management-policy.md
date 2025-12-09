@@ -7,7 +7,8 @@
 
 ## Purpose
 
-This policy establishes a standardized process for managing changes to IT systems, services, and infrastructure to minimize risk, ensure proper authorization, and maintain service stability.
+This policy establishes a standardized process for managing changes to IT systems, services, and
+infrastructure to minimize risk, ensure proper authorization, and maintain service stability.
 
 ## Scope
 
@@ -21,7 +22,9 @@ This policy applies to all changes to:
 
 ## Policy Statement
 
-All changes to IT systems must be planned, approved, tested, documented, and implemented following the change management process. Emergency changes may follow expedited procedures but must still be documented and reviewed.
+All changes to IT systems must be planned, approved, tested, documented, and implemented following the
+change management process. Emergency changes may follow expedited procedures but must still be
+documented and reviewed.
 
 ## Change Management Principles
 

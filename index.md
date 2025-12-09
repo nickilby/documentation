@@ -1,6 +1,7 @@
 # IT Documentation
 
-Welcome to the IT Documentation repository. This site contains IT policies and how-to guides for both Technical IT staff and end users.
+Welcome to the IT Documentation repository. This site contains IT policies and how-to guides for both
+Technical IT staff and end users.
 
 ## 📚 Documentation Sections
 
@@ -34,4 +35,6 @@ Each section contains an index that tracks which documents are:
 
 ---
 
-*Last updated: 2025*
+## Last Updated
+
+2025
