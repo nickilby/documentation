@@ -29,12 +29,42 @@ Each section contains an index file that lists all available documents and their
 - ✅ **Written** - Document is complete and available
 - 📝 **To Do** - Document is planned but not yet written
 
+## 🛠️ Development Setup
+
+### Pre-commit Hooks
+
+This repository uses pre-commit hooks to automatically lint markdown files before commits.
+
+**Initial Setup:**
+```bash
+# Install dependencies
+npm install
+
+# This will set up the git hooks automatically
+npm run prepare
+```
+
+After setup, the pre-commit hook will automatically:
+- Lint all staged markdown files
+- Attempt to auto-fix common issues
+- Prevent commits if unfixable errors are found
+
+**Manual Linting:**
+```bash
+# Lint all markdown files
+npm run lint
+
+# Lint and auto-fix issues
+npm run lint:fix
+```
+
 ## 🤝 Contributing
 
 When adding new policies or guides:
 1. Create the document in the appropriate folder
 2. Update the relevant index file to mark it as written
 3. Follow the existing naming conventions and structure
+4. The pre-commit hook will automatically check your markdown formatting
 
 ## 📄 License
 
