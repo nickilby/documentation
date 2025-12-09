@@ -25,8 +25,8 @@ This section contains IT policies and procedures for Technical IT staff.
 ## Categories
 
 Policies may be organized into subcategories as the documentation grows:
+
 - Security
 - Operations
 - Compliance
 - Infrastructure
-

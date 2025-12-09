@@ -13,6 +13,7 @@ Policies and procedures for Technical IT staff covering security, operations, co
 ### [How-To Guides](./guides/)
 
 Step-by-step guides organized by audience:
+
 - **End User Guides** - For non-technical users
 - **Technical Guides** - For IT staff
 
@@ -27,10 +28,10 @@ Step-by-step guides organized by audience:
 ## 📊 Documentation Status
 
 Each section contains an index that tracks which documents are:
+
 - ✅ **Written** - Complete and available
 - 📝 **To Do** - Planned but not yet written
 
 ---
 
 *Last updated: 2025*
-

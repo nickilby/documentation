@@ -19,4 +19,3 @@ Step-by-step guides for Technical IT staff.
 
 - ✅ **Written** - Guide is complete and available
 - 📝 **To Do** - Guide is planned but not yet written
-

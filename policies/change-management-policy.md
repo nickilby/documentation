@@ -12,6 +12,7 @@ This policy establishes a standardized process for managing changes to IT system
 ## Scope
 
 This policy applies to all changes to:
+
 - Production IT systems and infrastructure
 - Network configurations
 - Applications and software
@@ -25,21 +26,25 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ## Change Management Principles
 
 ### 1. Risk-Based Approach
+
 - Assess risk and impact before implementation
 - Appropriate testing and validation
 - Rollback planning for all changes
 
 ### 2. Authorization and Approval
+
 - Changes require appropriate approval based on risk
 - Change Advisory Board (CAB) for significant changes
 - Clear approval authority
 
 ### 3. Documentation
+
 - All changes must be documented
 - Change records maintained
 - Post-implementation reviews
 
 ### 4. Communication
+
 - Stakeholder notification
 - Change schedules published
 - Impact communication
@@ -47,18 +52,21 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ## Change Types
 
 ### Standard Changes
+
 - Pre-approved, low-risk, routine changes
 - Well-documented procedures
 - No CAB approval required
 - Examples: User account creation, routine patching
 
 ### Normal Changes
+
 - Require approval through change management process
 - Risk assessment and testing required
 - CAB approval for significant changes
 - Examples: Software upgrades, configuration changes
 
 ### Emergency Changes
+
 - Urgent changes to resolve incidents or security issues
 - Expedited approval process
 - Post-implementation review required
@@ -69,12 +77,14 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ### 1. Change Request
 
 #### Request Submission
+
 - Submit change request with required information
 - Include business justification
 - Specify risk and impact assessment
 - Propose implementation plan
 
 #### Required Information
+
 - Change description and purpose
 - Affected systems and services
 - Risk and impact assessment
@@ -86,12 +96,14 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ### 2. Change Assessment
 
 #### Risk Assessment
+
 - Technical risk evaluation
 - Business impact analysis
 - Security implications
 - Dependencies and relationships
 
 #### Impact Analysis
+
 - Affected systems and services
 - User impact
 - Performance implications
@@ -100,12 +112,14 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ### 3. Change Approval
 
 #### Approval Authority
+
 - **Low Risk:** IT Manager or designated approver
 - **Medium Risk:** Change Advisory Board (CAB)
 - **High Risk:** CAB and IT Director
 - **Emergency:** On-call manager with post-review
 
 #### Change Advisory Board (CAB)
+
 - Composed of key stakeholders
 - IT Operations, Security, Application owners
 - Meets regularly to review changes
@@ -114,17 +128,20 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ### 4. Change Planning
 
 #### Implementation Plan
+
 - Detailed step-by-step procedures
 - Resource allocation
 - Timeline and schedule
 - Communication plan
 
 #### Testing Plan
+
 - Test scenarios and acceptance criteria
 - Test environment requirements
 - Validation procedures
 
 #### Rollback Plan
+
 - Rollback procedures
 - Data backup requirements
 - Recovery time objectives
@@ -132,18 +149,21 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ### 5. Change Implementation
 
 #### Pre-Implementation
+
 - Final verification of readiness
 - Backup of systems and data
 - Notification to stakeholders
 - Preparation of rollback resources
 
 #### Implementation
+
 - Follow approved procedures
 - Document actual steps taken
 - Monitor for issues
 - Verify successful completion
 
 #### Post-Implementation
+
 - Validate functionality
 - Monitor system performance
 - Confirm no adverse effects
@@ -152,12 +172,14 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ### 6. Change Review
 
 #### Post-Implementation Review
+
 - Review within 5 business days
 - Assess success and issues
 - Document lessons learned
 - Update procedures if needed
 
 #### Metrics
+
 - Change success rate
 - Rollback rate
 - Change-related incidents
@@ -166,12 +188,14 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ## Emergency Change Process
 
 ### When to Use
+
 - Active security threat
 - Critical system outage
 - Data loss prevention
 - Regulatory compliance deadline
 
 ### Emergency Procedures
+
 1. Immediate notification to on-call manager
 2. Brief risk assessment
 3. Expedited approval (manager or director)
@@ -181,12 +205,14 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ## Change Windows
 
 ### Maintenance Windows
+
 - Scheduled periods for planned changes
 - Published in advance
 - Minimize business impact
 - Standard: Off-hours or weekends
 
 ### Blackout Periods
+
 - Periods when changes are restricted
 - Critical business periods
 - High-traffic times
@@ -195,11 +221,13 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ## Testing Requirements
 
 ### Test Environments
+
 - Separate test environment required
 - Production-like configuration
 - Test data management
 
 ### Testing Types
+
 - Unit testing
 - Integration testing
 - User acceptance testing
@@ -207,6 +235,7 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 - Security testing
 
 ### Test Documentation
+
 - Test results and evidence
 - Defect tracking
 - Sign-off from testers
@@ -214,6 +243,7 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ## Documentation Requirements
 
 ### Change Record
+
 - Change request details
 - Approval documentation
 - Implementation notes
@@ -221,6 +251,7 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 - Lessons learned
 
 ### System Documentation
+
 - Update system documentation
 - Update runbooks and procedures
 - Update architecture diagrams
@@ -229,22 +260,26 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ## Roles and Responsibilities
 
 ### Change Requester
+
 - Submit change requests
 - Provide necessary information
 - Participate in planning
 
 ### Change Manager
+
 - Process change requests
 - Coordinate CAB meetings
 - Maintain change records
 - Ensure compliance
 
 ### Change Implementer
+
 - Execute approved changes
 - Document implementation
 - Report issues
 
 ### Change Advisory Board
+
 - Review and approve changes
 - Provide expertise
 - Assess risk and impact
@@ -252,6 +287,7 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 ## Metrics and Reporting
 
 ### Key Metrics
+
 - Change volume by type
 - Change success rate
 - Average time to implement
@@ -259,6 +295,7 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 - Emergency change frequency
 
 ### Reporting
+
 - Monthly change reports
 - Quarterly trend analysis
 - Annual policy review
@@ -275,4 +312,3 @@ All changes to IT systems must be planned, approved, tested, documented, and imp
 - [Security Policy](./security-policy.md)
 - [Incident Response Policy](./incident-response-policy.md)
 - [Backup and Recovery Policy](./backup-recovery-policy.md)
-

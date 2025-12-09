@@ -12,6 +12,7 @@ This policy establishes requirements for managing software installation, updates
 ## Scope
 
 This policy applies to all software installed on organizational IT systems including:
+
 - Operating systems
 - Applications and productivity software
 - Development tools
@@ -25,18 +26,21 @@ All software must be approved, licensed, and managed according to established pr
 ## Software Categories
 
 ### Approved Software
+
 - Software on approved list
 - Standard business applications
 - Pre-approved for installation
 - Supported by IT department
 
 ### Restricted Software
+
 - Requires special approval
 - Security or compatibility concerns
 - Limited deployment
 - Enhanced monitoring
 
 ### Prohibited Software
+
 - Not allowed on organizational systems
 - Security risks
 - Licensing violations
@@ -45,12 +49,14 @@ All software must be approved, licensed, and managed according to established pr
 ## Software Approval Process
 
 ### Request Submission
+
 - Formal software request required
 - Business justification
 - Security and compatibility assessment
 - Cost and licensing information
 
 ### Approval Criteria
+
 - Business need justification
 - Security assessment
 - Compatibility verification
@@ -59,6 +65,7 @@ All software must be approved, licensed, and managed according to established pr
 - Cost-benefit analysis
 
 ### Approval Authority
+
 - **Standard Software:** IT Manager
 - **Restricted Software:** IT Director
 - **Enterprise Software:** IT Director and Finance
@@ -67,18 +74,21 @@ All software must be approved, licensed, and managed according to established pr
 ## Software Installation
 
 ### Authorized Installers
+
 - IT department personnel
 - Approved system administrators
 - Automated deployment systems
 - Self-service for approved software (where applicable)
 
 ### Installation Procedures
+
 - Follow approved procedures
 - Verify software integrity
 - Install from trusted sources
 - Document installation
 
 ### Pre-Installation Requirements
+
 - Software approval obtained
 - License acquired
 - Security scan completed
@@ -86,6 +96,7 @@ All software must be approved, licensed, and managed according to established pr
 - Backup performed (if applicable)
 
 ### Post-Installation
+
 - Verify successful installation
 - Configure security settings
 - Update software inventory
@@ -95,24 +106,28 @@ All software must be approved, licensed, and managed according to established pr
 ## Software Licensing
 
 ### License Management
+
 - Maintain software license inventory
 - Track license usage
 - Ensure compliance
 - Renewal planning
 
 ### License Types
+
 - Per-user licenses
 - Per-device licenses
 - Site licenses
 - Enterprise licenses
 
 ### Compliance
+
 - Regular license audits
 - Prevent over-deployment
 - Document all licenses
 - Maintain license records
 
 ### License Acquisition
+
 - Centralized procurement
 - Approved vendors
 - Volume licensing where beneficial
@@ -123,18 +138,21 @@ All software must be approved, licensed, and managed according to established pr
 ### Update Categories
 
 #### Security Updates
+
 - Critical security patches
 - Apply within 7 days (or per risk assessment)
 - Emergency patches within 24 hours
 - Test before production deployment
 
 #### Feature Updates
+
 - New features and enhancements
 - Planned deployment
 - Testing required
 - User communication
 
 #### Maintenance Updates
+
 - Bug fixes and stability improvements
 - Regular deployment schedule
 - Testing recommended
@@ -142,24 +160,28 @@ All software must be approved, licensed, and managed according to established pr
 ### Update Process
 
 #### Testing
+
 - Test in non-production environment
 - Verify compatibility
 - Test critical functionality
 - Document test results
 
 #### Deployment
+
 - Staged deployment approach
 - Pilot group first
 - Monitor for issues
 - Full deployment after validation
 
 #### Rollback Plan
+
 - Prepare rollback procedures
 - Backup before updates
 - Test rollback process
 - Document procedures
 
 ### Update Schedule
+
 - **Critical Security:** Immediate (within 24-48 hours)
 - **Important Security:** Within 7 days
 - **Standard Updates:** Monthly maintenance window
@@ -170,30 +192,35 @@ All software must be approved, licensed, and managed according to established pr
 ### Lifecycle Stages
 
 #### Evaluation
+
 - Assess business need
 - Evaluate options
 - Security and compatibility review
 - Cost analysis
 
 #### Deployment
+
 - Installation and configuration
 - User training
 - Documentation
 - Support setup
 
 #### Maintenance
+
 - Regular updates and patches
 - Performance monitoring
 - User support
 - License management
 
 #### Retirement
+
 - End-of-life planning
 - Migration planning
 - Data export
 - Removal procedures
 
 ### End-of-Life Management
+
 - Monitor vendor end-of-life announcements
 - Plan migration or replacement
 - Security considerations for unsupported software
@@ -202,6 +229,7 @@ All software must be approved, licensed, and managed according to established pr
 ## Software Inventory
 
 ### Inventory Requirements
+
 - Maintain comprehensive software inventory
 - Track all installed software
 - License information
@@ -209,6 +237,7 @@ All software must be approved, licensed, and managed according to established pr
 - Installation locations
 
 ### Inventory Management
+
 - Automated discovery tools
 - Regular audits
 - Update inventory with changes
@@ -217,18 +246,21 @@ All software must be approved, licensed, and managed according to established pr
 ## Unauthorized Software
 
 ### Prohibition
+
 - No unauthorized software installation
 - No personal software on work systems
 - No software from untrusted sources
 - No pirated or unlicensed software
 
 ### Detection
+
 - Automated software inventory
 - Regular audits
 - User reporting
 - Security scanning
 
 ### Enforcement
+
 - Automated blocking where possible
 - User education
 - Disciplinary action for violations
@@ -237,12 +269,14 @@ All software must be approved, licensed, and managed according to established pr
 ## Open Source Software
 
 ### Approval Requirements
+
 - License compatibility review
 - Security assessment
 - Support considerations
 - Documentation requirements
 
 ### License Compliance
+
 - Understand license terms
 - Comply with requirements
 - Document usage
@@ -251,12 +285,14 @@ All software must be approved, licensed, and managed according to established pr
 ## Cloud and SaaS Software
 
 ### Approval Process
+
 - Same approval requirements
 - Security assessment
 - Data handling review
 - Vendor assessment
 
 ### Management
+
 - Track cloud software usage
 - Monitor data access
 - Ensure compliance
@@ -265,12 +301,14 @@ All software must be approved, licensed, and managed according to established pr
 ## Software Security
 
 ### Security Requirements
+
 - Security assessment before approval
 - Regular security updates
 - Vulnerability scanning
 - Secure configuration
 
 ### Secure Configuration
+
 - Default security settings
 - Disable unnecessary features
 - Configure access controls
@@ -279,12 +317,14 @@ All software must be approved, licensed, and managed according to established pr
 ## Documentation
 
 ### Software Documentation
+
 - Installation procedures
 - Configuration guides
 - User documentation
 - Troubleshooting guides
 
 ### Inventory Documentation
+
 - Software list and versions
 - License information
 - Installation locations
@@ -293,17 +333,20 @@ All software must be approved, licensed, and managed according to established pr
 ## Roles and Responsibilities
 
 ### IT Operations
+
 - Software approval and installation
 - License management
 - Update deployment
 - Inventory management
 
 ### Security Team
+
 - Security assessments
 - Vulnerability management
 - Compliance monitoring
 
 ### End Users
+
 - Request software through proper channels
 - Report software issues
 - Comply with policies
@@ -311,12 +354,14 @@ All software must be approved, licensed, and managed according to established pr
 ## Training
 
 ### IT Staff
+
 - Software management procedures
 - Security best practices
 - License compliance
 - Update procedures
 
 ### End Users
+
 - Approved software awareness
 - Request procedures
 - Security awareness
@@ -324,12 +369,14 @@ All software must be approved, licensed, and managed according to established pr
 ## Compliance and Auditing
 
 ### License Audits
+
 - Regular license compliance audits
 - Vendor audit preparation
 - Documentation maintenance
 - Remediation of issues
 
 ### Security Audits
+
 - Software security assessments
 - Vulnerability scanning
 - Configuration reviews
@@ -339,4 +386,3 @@ All software must be approved, licensed, and managed according to established pr
 - [Security Policy](./security-policy.md)
 - [Change Management Policy](./change-management-policy.md)
 - [Access Control Policy](./access-control-policy.md)
-

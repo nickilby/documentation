@@ -12,6 +12,7 @@ This policy establishes security requirements for network infrastructure, networ
 ## Scope
 
 This policy applies to all network infrastructure including:
+
 - Local area networks (LAN)
 - Wide area networks (WAN)
 - Wireless networks
@@ -26,22 +27,26 @@ All network infrastructure must be designed, configured, and maintained with sec
 ## Network Architecture Principles
 
 ### 1. Defense in Depth
+
 - Multiple layers of security controls
 - Network segmentation
 - Redundant security measures
 
 ### 2. Network Segmentation
+
 - Separate network zones by security requirements
 - Isolate sensitive systems
 - Limit lateral movement
 - Implement DMZ for public-facing services
 
 ### 3. Least Privilege
+
 - Minimum necessary network access
 - Restrictive firewall rules
 - Network access controls
 
 ### 4. Secure by Default
+
 - Deny by default, allow by exception
 - Secure configurations
 - Disable unnecessary services
@@ -51,36 +56,42 @@ All network infrastructure must be designed, configured, and maintained with sec
 ### Network Zones
 
 #### Internet/DMZ Zone
+
 - Public-facing services
 - Web servers, email gateways
 - Strict firewall rules
 - No direct access to internal networks
 
 #### Internal Network Zone
+
 - Standard business systems
 - User workstations
 - Internal applications
 - Controlled access to sensitive zones
 
 #### Sensitive Data Zone
+
 - Systems handling sensitive data
 - Databases and file servers
 - Restricted access
 - Enhanced monitoring
 
 #### Management Zone
+
 - Network management systems
 - Administrative access
 - Highly restricted
 - Separate from production networks
 
 #### Guest Network Zone
+
 - Visitor and BYOD access
 - Internet-only access
 - Isolated from internal networks
 - No access to internal resources
 
 ### Segmentation Requirements
+
 - Firewall rules between zones
 - VLAN separation
 - Access control lists (ACLs)
@@ -91,24 +102,28 @@ All network infrastructure must be designed, configured, and maintained with sec
 ### Firewall Rules
 
 #### Rule Development
+
 - Business justification required
 - Least privilege principle
 - Specific source and destination
 - Specific ports and protocols
 
 #### Rule Documentation
+
 - Document all firewall rules
 - Business purpose
 - Owner and approver
 - Review date
 
 #### Rule Review
+
 - Quarterly review of firewall rules
 - Remove unused rules
 - Verify rule necessity
 - Update documentation
 
 ### Default Policies
+
 - Deny all traffic by default
 - Explicit allow rules only
 - Log all denied traffic
@@ -119,18 +134,21 @@ All network infrastructure must be designed, configured, and maintained with sec
 ### Device Hardening
 
 #### Configuration Standards
+
 - Change default passwords
 - Disable unnecessary services
 - Enable security features
 - Apply security patches
 
 #### Access Controls
+
 - Secure administrative access
 - Use encrypted protocols (SSH, HTTPS)
 - Implement role-based access
 - Log all administrative actions
 
 #### Physical Security
+
 - Secure network equipment rooms
 - Access controls and monitoring
 - Environmental controls
@@ -139,12 +157,14 @@ All network infrastructure must be designed, configured, and maintained with sec
 ### Device Management
 
 #### Configuration Management
+
 - Document all configurations
 - Version control for configurations
 - Change management process
 - Regular configuration backups
 
 #### Patch Management
+
 - Regular security updates
 - Test patches before production
 - Schedule maintenance windows
@@ -153,18 +173,21 @@ All network infrastructure must be designed, configured, and maintained with sec
 ## Wireless Network Security
 
 ### Wireless Standards
+
 - Use WPA3 or WPA2-Enterprise
 - No WEP or WPA (deprecated)
 - Strong encryption (AES)
 - Secure authentication
 
 ### Wireless Access Points
+
 - Change default credentials
 - Disable unnecessary features
 - Regular firmware updates
 - Physical security
 
 ### Guest Wireless
+
 - Separate guest network
 - Internet-only access
 - No access to internal resources
@@ -172,6 +195,7 @@ All network infrastructure must be designed, configured, and maintained with sec
 - Terms of use acceptance
 
 ### BYOD (Bring Your Own Device)
+
 - Device registration required
 - Endpoint security requirements
 - Network access control (NAC)
@@ -180,18 +204,21 @@ All network infrastructure must be designed, configured, and maintained with sec
 ## VPN and Remote Access
 
 ### VPN Requirements
+
 - Strong encryption (IPsec or SSL/TLS)
 - Multi-factor authentication
 - Endpoint security checks
 - Activity monitoring and logging
 
 ### VPN Configuration
+
 - Split tunneling restrictions
 - DNS configuration
 - Access controls
 - Session timeout
 
 ### Remote Access Policy
+
 - Compliance with [Remote Access Policy](./remote-access-policy.md)
 - Secure connection requirements
 - Endpoint security
@@ -200,18 +227,21 @@ All network infrastructure must be designed, configured, and maintained with sec
 ## Network Monitoring
 
 ### Monitoring Requirements
+
 - Continuous network monitoring
 - Intrusion detection systems (IDS)
 - Intrusion prevention systems (IPS)
 - Network traffic analysis
 
 ### Logging and Analysis
+
 - Log all network events
 - Centralized log management
 - Regular log analysis
 - Anomaly detection
 
 ### Alerting
+
 - Real-time security alerts
 - Automated response where appropriate
 - Escalation procedures
@@ -220,18 +250,21 @@ All network infrastructure must be designed, configured, and maintained with sec
 ## Network Protocols and Services
 
 ### Allowed Protocols
+
 - Secure protocols preferred (HTTPS, SSH, SFTP)
 - Legacy protocols only if necessary
 - Document protocol usage
 - Regular review
 
 ### Prohibited Protocols
+
 - Unencrypted protocols for sensitive data
 - Unnecessary services
 - Default or weak protocols
 - Document exceptions
 
 ### Service Configuration
+
 - Disable unnecessary services
 - Secure service configuration
 - Regular service review
@@ -240,18 +273,21 @@ All network infrastructure must be designed, configured, and maintained with sec
 ## Network Access Control (NAC)
 
 ### Device Authentication
+
 - Device registration required
 - Certificate-based authentication
 - MAC address filtering (where appropriate)
 - Guest device isolation
 
 ### Endpoint Compliance
+
 - Security posture checks
 - Antivirus status
 - Patch level verification
 - Compliance enforcement
 
 ### Quarantine
+
 - Non-compliant device isolation
 - Remediation procedures
 - Access restoration after compliance
@@ -259,12 +295,14 @@ All network infrastructure must be designed, configured, and maintained with sec
 ## Incident Response
 
 ### Network Security Incidents
+
 - Follow [Incident Response Policy](./incident-response-policy.md)
 - Immediate containment
 - Network isolation if necessary
 - Forensic analysis
 
 ### Response Procedures
+
 - Identify affected systems
 - Isolate compromised segments
 - Preserve evidence
@@ -273,12 +311,14 @@ All network infrastructure must be designed, configured, and maintained with sec
 ## Vulnerability Management
 
 ### Network Scanning
+
 - Regular vulnerability scans
 - Penetration testing
 - Network device assessments
 - Remediation tracking
 
 ### Patch Management
+
 - Regular security updates
 - Critical patches applied promptly
 - Testing before production
@@ -287,12 +327,14 @@ All network infrastructure must be designed, configured, and maintained with sec
 ## Compliance and Auditing
 
 ### Regulatory Compliance
+
 - Industry-specific requirements
 - Network security standards
 - Audit trail maintenance
 - Compliance documentation
 
 ### Security Audits
+
 - Annual network security audit
 - Configuration reviews
 - Access control audits
@@ -301,12 +343,14 @@ All network infrastructure must be designed, configured, and maintained with sec
 ## Documentation
 
 ### Network Documentation
+
 - Network diagrams and architecture
 - Firewall rule documentation
 - Device configurations
 - Change history
 
 ### Procedures
+
 - Network change procedures
 - Incident response procedures
 - Troubleshooting guides
@@ -315,6 +359,7 @@ All network infrastructure must be designed, configured, and maintained with sec
 ## Training and Awareness
 
 ### Requirements
+
 - Network security training for IT staff
 - Awareness for all users
 - Regular updates on threats
@@ -326,4 +371,3 @@ All network infrastructure must be designed, configured, and maintained with sec
 - [Remote Access Policy](./remote-access-policy.md)
 - [Access Control Policy](./access-control-policy.md)
 - [Incident Response Policy](./incident-response-policy.md)
-

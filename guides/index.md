@@ -39,4 +39,3 @@ This section contains step-by-step guides for both Technical IT staff and end us
 
 - [End User Guides](./end-users/) - Guides for non-technical users
 - [Technical Guides](./technical/) - Guides for IT staff
-
