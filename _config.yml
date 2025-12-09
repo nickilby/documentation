@@ -1,0 +1,20 @@
+# GitHub Pages Jekyll Configuration
+title: IT Documentation
+description: IT policies and how-to guides for Technical IT staff and end users
+theme: jekyll-theme-minimal
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Policies
+    url: /policies/
+  - title: Guides
+    url: /guides/
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+
