@@ -1,0 +1,229 @@
+name: Lint and Create Draft Release
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: Lint Markdown Files
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli@0.39.0
+      
+      - name: Install markdownlint-cli2
+        run: npm install -g markdownlint-cli2@0.10.0
+      
+      - name: Create markdownlint config
+        run: |
+          cat > .markdownlint.json << 'EOF'
+          {
+            "default": true,
+            "MD013": {
+              "line_length": 120,
+              "heading_line_length": 120,
+              "code_block_line_length": 120
+            },
+            "MD033": false,
+            "MD041": false
+          }
+          EOF
+      
+      - name: Lint markdown files
+        run: |
+          markdownlint '**/*.md' --ignore node_modules --ignore .git
+          exit_code=$?
+          if [ $exit_code -ne 0 ]; then
+            echo "Markdown linting failed. Please fix the errors above."
+            exit $exit_code
+          fi
+      
+      - name: Check for broken links (optional)
+        continue-on-error: true
+        run: |
+          npm install -g markdown-link-check@0.11.0
+          find . -name "*.md" -not -path "./node_modules/*" -not -path "./.git/*" | \
+            xargs -I {} markdown-link-check {} --config .markdownlinkcheck.json || true
+
+  create-release:
+    name: Create Draft Release
+    runs-on: ubuntu-latest
+    needs: lint
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Get version from latest tag
+        id: get_version
+        run: |
+          # Get the latest tag, or default to v1.0.0
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+          
+          # Extract version number and increment patch
+          if [[ $LATEST_TAG =~ v([0-9]+)\.([0-9]+)\.([0-9]+) ]]; then
+            MAJOR=${BASH_REMATCH[1]}
+            MINOR=${BASH_REMATCH[2]}
+            PATCH=${BASH_REMATCH[3]}
+            NEW_PATCH=$((PATCH + 1))
+            NEW_VERSION="v${MAJOR}.${MINOR}.${NEW_PATCH}"
+          else
+            NEW_VERSION="v1.0.0"
+          fi
+          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+      
+      - name: Generate release tag
+        id: release_tag
+        run: |
+          # Get current date in YYYY-MM-DD format
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          
+          # Get version from previous step
+          VERSION="${{ steps.get_version.outputs.new_version }}"
+          
+          # Create tag: v1.0.1-2025-01-15 format
+          RELEASE_TAG="${VERSION}-${CURRENT_DATE}"
+          echo "tag=$RELEASE_TAG" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "date=$CURRENT_DATE" >> $GITHUB_OUTPUT
+      
+      - name: Check if release already exists
+        id: check_release
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const tag = '${{ steps.release_tag.outputs.tag }}';
+            try {
+              const release = await github.rest.repos.getReleaseByTag({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                tag: tag
+              });
+              console.log(`Release with tag ${tag} already exists`);
+              core.setOutput('exists', 'true');
+            } catch (error) {
+              if (error.status === 404) {
+                console.log(`Release with tag ${tag} does not exist`);
+                core.setOutput('exists', 'false');
+              } else {
+                throw error;
+              }
+            }
+      
+      - name: Generate release notes
+        id: release_notes
+        run: |
+          # Get commits since last tag or last 10 commits
+          LAST_TAG="${{ steps.get_version.outputs.latest_tag }}"
+          if [ "$LAST_TAG" = "v0.0.0" ]; then
+            COMMITS=$(git log --pretty=format:"- %s (%h)" -10)
+          else
+            COMMITS=$(git log ${LAST_TAG}..HEAD --pretty=format:"- %s (%h)")
+          fi
+          
+          # Count policy files
+          POLICY_COUNT=$(find policies -name "*.md" -not -name "index.md" | wc -l)
+          
+          # Create release notes
+          cat > release_notes.md << EOF
+          # Release ${{ steps.release_tag.outputs.tag }}
+          
+          **Version:** ${{ steps.release_tag.outputs.version }}  
+          **Date:** ${{ steps.release_tag.outputs.date }}
+          
+          ## Changes
+          
+          $COMMITS
+          
+          ## Documentation Status
+          
+          - **Policies:** $POLICY_COUNT policies documented
+          - All policies include next review dates
+          
+          ## Next Steps
+          
+          - Review and publish this release
+          - Update GitHub Pages if needed
+          EOF
+          
+          cat release_notes.md
+      
+      - name: Create Git tag
+        if: steps.check_release.outputs.exists == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "${{ steps.release_tag.outputs.tag }}" -m "Release ${{ steps.release_tag.outputs.tag }}"
+          git push origin "${{ steps.release_tag.outputs.tag }}"
+      
+      - name: Create draft release
+        if: steps.check_release.outputs.exists == 'false'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const releaseNotes = fs.readFileSync('release_notes.md', 'utf8');
+            
+            const release = await github.rest.repos.createRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag_name: '${{ steps.release_tag.outputs.tag }}',
+              name: 'Release ${{ steps.release_tag.outputs.tag }}',
+              body: releaseNotes,
+              draft: true,
+              prerelease: false
+            });
+            
+            console.log(`Created draft release: ${release.data.html_url}`);
+      
+      - name: Update existing release
+        if: steps.check_release.outputs.exists == 'true'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const releaseNotes = fs.readFileSync('release_notes.md', 'utf8');
+            
+            // Get the existing release
+            const existingRelease = await github.rest.repos.getReleaseByTag({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag: '${{ steps.release_tag.outputs.tag }}'
+            });
+            
+            // Update the release
+            await github.rest.repos.updateRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              release_id: existingRelease.data.id,
+              body: releaseNotes,
+              draft: true
+            });
+            
+            console.log(`Updated draft release: ${existingRelease.data.html_url}`);
+

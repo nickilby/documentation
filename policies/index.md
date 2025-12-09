@@ -6,16 +6,16 @@ This section contains IT policies and procedures for Technical IT staff.
 
 | Policy | Status | Description |
 |--------|--------|-------------|
-| [Security Policy](./security-policy.md) | 📝 To Do | Security policies and procedures |
-| [Incident Response Policy](./incident-response-policy.md) | 📝 To Do | Procedures for handling IT incidents |
-| [Change Management Policy](./change-management-policy.md) | 📝 To Do | Process for managing system changes |
-| [Backup and Recovery Policy](./backup-recovery-policy.md) | 📝 To Do | Data backup and recovery procedures |
-| [Access Control Policy](./access-control-policy.md) | 📝 To Do | User access management and controls |
-| [Network Security Policy](./network-security-policy.md) | 📝 To Do | Network security standards and procedures |
-| [Software Management Policy](./software-management-policy.md) | 📝 To Do | Software installation and update procedures |
-| [Password Policy](./password-policy.md) | 📝 To Do | Password requirements and management |
-| [Remote Access Policy](./remote-access-policy.md) | 📝 To Do | Remote access procedures and security |
-| [Data Classification Policy](./data-classification-policy.md) | 📝 To Do | Data classification and handling procedures |
+| [Security Policy](./security-policy.md) | ✅ Written | Security policies and procedures |
+| [Incident Response Policy](./incident-response-policy.md) | ✅ Written | Procedures for handling IT incidents |
+| [Change Management Policy](./change-management-policy.md) | ✅ Written | Process for managing system changes |
+| [Backup and Recovery Policy](./backup-recovery-policy.md) | ✅ Written | Data backup and recovery procedures |
+| [Access Control Policy](./access-control-policy.md) | ✅ Written | User access management and controls |
+| [Network Security Policy](./network-security-policy.md) | ✅ Written | Network security standards and procedures |
+| [Software Management Policy](./software-management-policy.md) | ✅ Written | Software installation and update procedures |
+| [Password Policy](./password-policy.md) | ✅ Written | Password requirements and management |
+| [Remote Access Policy](./remote-access-policy.md) | ✅ Written | Remote access procedures and security |
+| [Data Classification Policy](./data-classification-policy.md) | ✅ Written | Data classification and handling procedures |
 
 ## Status Legend
 
