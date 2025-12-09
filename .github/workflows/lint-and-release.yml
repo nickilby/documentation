@@ -31,21 +31,6 @@ jobs:
       - name: Install markdownlint-cli2
         run: npm install -g markdownlint-cli2@0.10.0
       
-      - name: Create markdownlint config
-        run: |
-          cat > .markdownlint.json << 'EOF'
-          {
-            "default": true,
-            "MD013": {
-              "line_length": 120,
-              "heading_line_length": 120,
-              "code_block_line_length": 120
-            },
-            "MD033": false,
-            "MD041": false
-          }
-          EOF
-      
       - name: Lint markdown files
         run: |
           markdownlint '**/*.md' --ignore node_modules --ignore .git
