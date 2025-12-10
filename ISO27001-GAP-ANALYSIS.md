@@ -46,15 +46,18 @@ addressed before an ISO 27001 inspection.
 ## Missing High-Priority Policies (⚠️ Required)
 
 ### 1. **Cryptography Policy** (A.10.1.1, A.10.1.2)
+
 **Priority:** 🟡 HIGH  
 **ISO Control:** A.10.1.1, A.10.1.2  
 **Why Required:**
+
 - Defines encryption requirements
 - Specifies cryptographic controls
 - Key management procedures
 - Compliance with encryption standards
 
 **Should Include:**
+
 - Encryption requirements (at rest, in transit)
 - Approved encryption algorithms
 - Key management procedures
@@ -65,15 +68,18 @@ addressed before an ISO 27001 inspection.
 ---
 
 ### 2. **Physical Security Policy** (A.11.1.1, A.11.1.2)
+
 **Priority:** 🟡 HIGH  
 **ISO Control:** A.11.1.1, A.11.1.2, A.11.2.1  
 **Why Required:**
+
 - Protects physical assets and facilities
 - Controls physical access
 - Environmental controls
 - Equipment security
 
 **Should Include:**
+
 - Physical access controls
 - Visitor management
 - Secure areas definition
@@ -85,15 +91,18 @@ addressed before an ISO 27001 inspection.
 ---
 
 ### 3. **Data Retention and Disposal Policy** (A.8.2.3, A.8.3.2)
+
 **Priority:** 🟡 HIGH  
 **ISO Control:** A.8.2.3, A.8.3.2  
 **Why Required:**
+
 - Legal and regulatory compliance
 - Defines data lifecycle
 - Secure disposal procedures
 - Retention schedules
 
 **Should Include:**
+
 - Data retention periods by classification
 - Legal and regulatory requirements
 - Secure disposal methods
@@ -106,9 +115,11 @@ addressed before an ISO 27001 inspection.
 ## Additional Recommended Policies
 
 ### 9. **Vulnerability Management Policy** (A.12.6.1)
+
 **Priority:** 🟡 HIGH  
 **ISO Control:** A.12.6.1  
 **Why Recommended:**
+
 - Systematic vulnerability management
 - Patch management procedures
 - Vulnerability scanning schedule
@@ -117,9 +128,11 @@ addressed before an ISO 27001 inspection.
 ---
 
 ### 10. **Security Awareness and Training Policy** (A.7.2.2)
+
 **Priority:** 🟡 HIGH  
 **ISO Control:** A.7.2.2  
 **Why Recommended:**
+
 - Employee security awareness
 - Training requirements
 - Phishing simulation
@@ -128,9 +141,11 @@ addressed before an ISO 27001 inspection.
 ---
 
 ### 11. **Mobile Device Policy** (A.6.2.1)
+
 **Priority:** 🟢 MEDIUM  
 **ISO Control:** A.6.2.1  
 **Why Recommended:**
+
 - BYOD management
 - Mobile device security
 - Mobile application management
@@ -139,9 +154,11 @@ addressed before an ISO 27001 inspection.
 ---
 
 ### 12. **Email Security Policy** (A.13.2.1)
+
 **Priority:** 🟢 MEDIUM  
 **ISO Control:** A.13.2.1  
 **Why Recommended:**
+
 - Email usage guidelines
 - Email encryption
 - Phishing prevention
@@ -150,9 +167,11 @@ addressed before an ISO 27001 inspection.
 ---
 
 ### 13. **Cloud Security Policy** (A.15.2.1)
+
 **Priority:** 🟢 MEDIUM (if using cloud)  
 **ISO Control:** A.15.2.1  
 **Why Recommended:**
+
 - Cloud service security requirements
 - Cloud provider assessment
 - Cloud data protection
@@ -161,9 +180,11 @@ addressed before an ISO 27001 inspection.
 ---
 
 ### 14. **Logging and Monitoring Policy** (A.12.4.1)
+
 **Priority:** 🟢 MEDIUM  
 **ISO Control:** A.12.4.1, A.12.4.2  
 **Why Recommended:**
+
 - Logging requirements
 - Log retention
 - Monitoring procedures
@@ -279,6 +300,7 @@ addressed before an ISO 27001 inspection.
 ## Compliance Checklist
 
 ### Policies (Minimum Required)
+
 - [x] Information Security Policy
 - [x] Access Control Policy
 - [x] Password Policy
@@ -299,6 +321,7 @@ addressed before an ISO 27001 inspection.
 - [ ] **Data Retention and Disposal Policy** 🟡
 
 ### Documentation (Minimum Required)
+
 - [ ] ISMS Scope Document
 - [ ] Statement of Applicability (SOA)
 - [ ] Risk Register
@@ -309,6 +332,7 @@ addressed before an ISO 27001 inspection.
 - [ ] Corrective Action Procedure
 
 ### Records (Ongoing)
+
 - [ ] Risk assessment records
 - [ ] Access review records
 - [ ] Training records
@@ -364,4 +388,3 @@ addressed before an ISO 27001 inspection.
 **Last Updated:** 2025-01-10  
 **Status:** Phase 1 Complete - 5 Critical Policies Implemented  
 **Next Review:** After Phase 2 policy implementation
-

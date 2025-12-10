@@ -399,10 +399,11 @@ This policy shall be reviewed:
 ## Document Control
 
 **Version History:**
+
 - 1.0 (2025) - Initial release
 
 **Approval:**
+
 - Approved by: [IT Director / Business Continuity Manager]
 - Approval Date: [Date]
 - Next Review: 2026-01-01
-
