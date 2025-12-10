@@ -53,11 +53,16 @@ jobs:
     needs: lint
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     
+    permissions:
+      contents: write
+      pull-requests: read
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Get version from latest tag
         id: get_version
