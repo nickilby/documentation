@@ -21,6 +21,8 @@ This section contains step-by-step guides for both Technical IT staff and end us
 
 | Guide | Status | Description |
 |-------|--------|-------------|
+| [Ubuntu OS Hardening](./technical/ubuntu-os-hardening.md) | ✅ Written | Comprehensive OS-level security hardening for Ubuntu systems |
+| [Ubuntu Server Deployment Hardening](./technical/ubuntu-server-deployment-hardening.md) | ✅ Written | Secure deployment practices including bastion host configuration and network architecture |
 | [Server Deployment Process](./technical/server-deployment.md) | 📝 To Do | Standard server deployment procedures |
 | [Monitoring Setup](./technical/monitoring-setup.md) | 📝 To Do | Setting up monitoring and alerts |
 | [Backup Configuration](./technical/backup-configuration.md) | 📝 To Do | Configuring backup systems |
