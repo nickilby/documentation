@@ -1,12 +1,16 @@
 #!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+# Try to source husky.sh, but continue if it fails (for WSL compatibility)
+if [ -f "$(dirname -- "$0")/_/husky.sh" ]; then
+  . "$(dirname -- "$0")/_/husky.sh"
+fi
 
 # Lint all markdown files first
 echo "Running markdownlint on all files..."
 npm run lint
 
 # If linting fails, exit with error
-if [ $? -ne 0 ]; then
+LINT_EXIT_CODE=$?
+if [ $LINT_EXIT_CODE -ne 0 ]; then
   echo "❌ Lint errors found. Please fix them before committing."
   echo "You can run 'npm run lint:fix' to auto-fix some issues."
   exit 1
