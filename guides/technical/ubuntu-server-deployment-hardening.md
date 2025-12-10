@@ -7,11 +7,14 @@
 
 ## Purpose
 
-This guide provides best practices and procedures for securely deploying Ubuntu servers in production environments, including network architecture, bastion host configuration, and secure deployment patterns.
+This guide provides best practices and procedures for securely deploying Ubuntu servers in production
+environments, including network architecture, bastion host configuration, and secure deployment patterns.
 
 ## Scope
 
-This guide applies to all Ubuntu server deployments within the organization, including cloud, on-premises, and hybrid environments. It covers pre-deployment planning, network architecture, bastion host setup, and secure deployment practices.
+This guide applies to all Ubuntu server deployments within the organization, including cloud,
+on-premises, and hybrid environments. It covers pre-deployment planning, network architecture, bastion
+host setup, and secure deployment practices.
 
 ## Prerequisites
 
@@ -80,7 +83,7 @@ Create deployment checklist:
 
 Design network architecture with proper segmentation:
 
-```
+```text
 Internet
   |
   | (Firewall)
@@ -108,18 +111,21 @@ Management Zone
 ### 2.2 Network Segmentation Best Practices
 
 **DMZ Zone:**
+
 - Public-facing services only
 - No direct access to internal networks
 - Strict firewall rules
 - Regular security updates
 
 **Internal Network Zone:**
+
 - Application and data servers
 - Restricted external access
 - Internal communication only
 - Network monitoring
 
 **Management Zone:**
+
 - Administrative access
 - Bastion hosts
 - Monitoring and logging
@@ -170,7 +176,7 @@ sudo netplan apply
 
 Bastion hosts provide secure access to internal servers:
 
-```
+```text
 Internet
   |
   | (SSH on port 2222)
@@ -204,6 +210,7 @@ sudo nano /etc/netplan/01-netcfg.yaml
 ```
 
 Ensure bastion has:
+
 - Public IP address (or DMZ IP)
 - Access to internal network
 - No unnecessary network services
@@ -218,7 +225,7 @@ sudo nano /etc/ssh/sshd_config
 
 Configure for bastion:
 
-```
+```ssh-config
 # Listen on all interfaces
 ListenAddress 0.0.0.0
 
@@ -326,7 +333,7 @@ sudo ufw allow out to 10.0.0.0/8 port 22 proto tcp
 sudo nano /etc/rsyslog.d/50-bastion.conf
 ```
 
-```
+```ini
 # Log all SSH connections
 :msg, contains, "sshd" /var/log/bastion-ssh.log
 & stop
@@ -449,7 +456,7 @@ sudo nano /etc/openvpn/server/server.conf
 
 Key VPN security settings:
 
-```
+```ini
 # Strong encryption
 cipher AES-256-GCM
 auth SHA256
@@ -492,7 +499,7 @@ sudo nano /etc/suricata/suricata.yaml
 
 ### 6.1 Three-Tier Architecture
 
-```
+```text
 Internet
   |
   | (Load Balancer)
@@ -633,7 +640,7 @@ sudo nano /etc/rsyslog.conf
 
 Enable:
 
-```
+```ini
 module(load="imtcp")
 input(type="imtcp" port="514")
 ```
@@ -647,7 +654,7 @@ sudo nano /etc/rsyslog.conf
 
 Add:
 
-```
+```ini
 *.* @@log-server-ip:514
 ```
 
@@ -747,7 +754,7 @@ find $BACKUP_DIR -name "backup_*.tar.gz.encrypted" -mtime +30 -delete
 sudo crontab -e
 ```
 
-```
+```cron
 # Daily backup at 2 AM
 0 2 * * * /usr/local/bin/backup-server.sh
 ```
@@ -799,7 +806,7 @@ sudo nano /etc/audit/rules.d/audit.rules
 
 Add comprehensive rules:
 
-```
+```audit
 # Monitor file access
 -w /etc/passwd -p wa -k passwd_changes
 -w /etc/group -p wa -k group_changes
@@ -935,6 +942,7 @@ deploy:
 Use this checklist for each server deployment:
 
 ### Pre-Deployment
+
 - [ ] Security requirements documented
 - [ ] Risk assessment completed
 - [ ] Network architecture designed
@@ -942,6 +950,7 @@ Use this checklist for each server deployment:
 - [ ] Access controls planned
 
 ### Deployment
+
 - [ ] OS hardening completed (see Ubuntu OS Hardening Guide)
 - [ ] Network configuration applied
 - [ ] Firewall configured and enabled
@@ -951,6 +960,7 @@ Use this checklist for each server deployment:
 - [ ] Backups configured
 
 ### Post-Deployment
+
 - [ ] Security testing completed
 - [ ] Access verified
 - [ ] Monitoring verified
@@ -963,30 +973,35 @@ Use this checklist for each server deployment:
 ## 13. Best Practices Summary
 
 ### Network Security
+
 - Use network segmentation (DMZ, internal, management zones)
 - Implement bastion hosts for secure access
 - Configure strict firewall rules
 - Monitor network traffic
 
 ### Access Control
+
 - Use key-based authentication
 - Implement least privilege access
 - Use bastion hosts for all remote access
 - Monitor and log all access
 
 ### Communication Security
+
 - Encrypt all sensitive communications
 - Use TLS/SSL for all services
 - Implement service-to-service authentication
 - Secure backup communications
 
 ### Monitoring and Logging
+
 - Centralize logging
 - Monitor security events
 - Set up alerts for suspicious activity
 - Regular log review
 
 ### Backup and Recovery
+
 - Automated backups
 - Encrypted backups
 - Off-site backup storage
@@ -1000,18 +1015,21 @@ Use this checklist for each server deployment:
 ### Common Issues
 
 **Cannot Access Server via Bastion:**
+
 - Verify bastion SSH configuration
 - Check firewall rules on bastion
 - Verify SSH keys are correct
 - Check network connectivity
 
 **Port Forwarding Not Working:**
+
 - Verify `AllowTcpForwarding` is enabled in sshd_config
 - Check firewall rules
 - Verify network connectivity
 - Check for port conflicts
 
 **Backup Failures:**
+
 - Verify backup script permissions
 - Check disk space
 - Verify network connectivity to backup server
@@ -1032,8 +1050,9 @@ Use this checklist for each server deployment:
 ## Document Control
 
 **Version History:**
+
 - 1.0 (2025) - Initial release
 
 **Review Schedule:**
-This document should be reviewed annually or when significant deployment changes occur.
 
+This document should be reviewed annually or when significant deployment changes occur.
