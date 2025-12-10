@@ -7,6 +7,11 @@ This section contains IT policies and procedures for Technical IT staff.
 | Policy | Status | Description |
 |--------|--------|-------------|
 | [Security Policy](./security-policy.md) | ✅ Written | Security policies and procedures |
+| [Risk Management Policy](./risk-management-policy.md) | ✅ Written | Risk assessment and treatment procedures |
+| [Asset Management Policy](./asset-management-policy.md) | ✅ Written | Information asset identification and management |
+| [Acceptable Use Policy](./acceptable-use-policy.md) | ✅ Written | Acceptable use of IT resources and systems |
+| [Business Continuity Policy](./business-continuity-policy.md) | ✅ Written | Business continuity and disaster recovery planning |
+| [Supplier Security Policy](./supplier-security-policy.md) | ✅ Written | Third-party supplier security requirements |
 | [Incident Response Policy](./incident-response-policy.md) | ✅ Written | Procedures for handling IT incidents |
 | [Change Management Policy](./change-management-policy.md) | ✅ Written | Process for managing system changes |
 | [Backup and Recovery Policy](./backup-recovery-policy.md) | ✅ Written | Data backup and recovery procedures |
