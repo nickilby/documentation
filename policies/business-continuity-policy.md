@@ -7,15 +7,19 @@
 
 ## Purpose
 
-This policy establishes the framework for ensuring continuity of critical business functions and IT services during and after disruptive events, minimizing business impact and enabling timely recovery.
+This policy establishes the framework for ensuring continuity of critical business functions and IT services
+during and after disruptive events, minimizing business impact and enabling timely recovery.
 
 ## Scope
 
-This policy applies to all critical business functions, IT systems, applications, services, and supporting infrastructure. It covers business continuity planning, disaster recovery, and crisis management.
+This policy applies to all critical business functions, IT systems, applications, services, and supporting
+infrastructure. It covers business continuity planning, disaster recovery, and crisis management.
 
 ## Policy Statement
 
-The organization must maintain business continuity plans to ensure critical business functions and IT services can continue or be recovered within acceptable timeframes following disruptive events. Business continuity planning is an ongoing process that requires regular review, testing, and improvement.
+The organization must maintain business continuity plans to ensure critical business functions and IT services
+can continue or be recovered within acceptable timeframes following disruptive events. Business continuity
+planning is an ongoing process that requires regular review, testing, and improvement.
 
 ## Business Continuity Principles
 

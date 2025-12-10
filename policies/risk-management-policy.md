@@ -7,15 +7,19 @@
 
 ## Purpose
 
-This policy establishes the framework for identifying, assessing, treating, and monitoring information security risks to ensure organizational assets are protected and business objectives are achieved.
+This policy establishes the framework for identifying, assessing, treating, and monitoring information
+security risks to ensure organizational assets are protected and business objectives are achieved.
 
 ## Scope
 
-This policy applies to all information assets, IT systems, networks, applications, data, processes, and third-party services within the organization's Information Security Management System (ISMS) scope.
+This policy applies to all information assets, IT systems, networks, applications, data, processes, and
+third-party services within the organization's Information Security Management System (ISMS) scope.
 
 ## Policy Statement
 
-All information security risks must be systematically identified, assessed, treated, and monitored in accordance with this policy. Risk management decisions must be documented, approved by appropriate management, and reviewed regularly.
+All information security risks must be systematically identified, assessed, treated, and monitored in
+accordance with this policy. Risk management decisions must be documented, approved by appropriate
+management, and reviewed regularly.
 
 ## Risk Management Principles
 

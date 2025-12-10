@@ -7,7 +7,9 @@
 
 ## Purpose
 
-This policy establishes requirements for identifying, classifying, managing, and protecting information assets throughout their lifecycle to ensure appropriate security controls are applied based on asset value and sensitivity.
+This policy establishes requirements for identifying, classifying, managing, and protecting information assets
+throughout their lifecycle to ensure appropriate security controls are applied based on asset value and
+sensitivity.
 
 ## Scope
 
@@ -21,7 +23,9 @@ This policy applies to all information assets owned, managed, or used by the org
 
 ## Policy Statement
 
-All information assets must be identified, classified, assigned owners, inventoried, and managed according to their classification level. Asset owners are responsible for ensuring appropriate security controls are applied to protect their assets.
+All information assets must be identified, classified, assigned owners, inventoried, and managed according to
+their classification level. Asset owners are responsible for ensuring appropriate security controls are applied
+to protect their assets.
 
 ## Asset Management Principles
 

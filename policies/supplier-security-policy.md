@@ -7,7 +7,9 @@
 
 ## Purpose
 
-This policy establishes security requirements and procedures for managing third-party suppliers, vendors, and service providers to ensure organizational information assets are protected when accessed, processed, or managed by external parties.
+This policy establishes security requirements and procedures for managing third-party suppliers, vendors,
+and service providers to ensure organizational information assets are protected when accessed, processed,
+or managed by external parties.
 
 ## Scope
 
@@ -23,7 +25,9 @@ This policy applies to all third-party suppliers, vendors, and service providers
 
 ## Policy Statement
 
-All suppliers must meet organizational security requirements before being engaged. Supplier security must be assessed, monitored, and managed throughout the supplier relationship to ensure continued protection of organizational assets.
+All suppliers must meet organizational security requirements before being engaged. Supplier security must
+be assessed, monitored, and managed throughout the supplier relationship to ensure continued protection of
+organizational assets.
 
 ## Supplier Security Principles
 
